@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="css/bootstrap.css">
+	<link rel="stylesheet"  href="css/style1.css">
+    <script   src="js/script1.js"></script>
+    
+        <title>Text Editor</title>
+
+	 <style>
+		  li{
+			   	padding-right: 8px;
+		  	 	padding-left: 8px;
+         		padding-top:6px;
+		  }
+	 </style>
+	
+  </head>
+  <body style="background-color:#f4f4f0;">
+  		<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-secondary py-md-0">
+  		<div class ="collapse navbar-collapse justify-content-center">
+  		<ul class="navbar-nav">
+   			<li class="nav-item">
+      			<a class="nav-link"><img onclick="textBold()"src="Resources/bold.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+				<a class="nav-link"><img onclick="textUnderline()" src="Resources/underline.png" style="width:21px;height:21px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textItalic()" src="Resources/italic.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+    			 <a class="nav-link"><img onclick="selectTextColor()" src="Resources/text-color.png" style="width:23px;height:23px;"></a>
+           <abbr title="Select Text Colour"><input type="color" id="txtColor" value="#000000" onchange="selectTextColor()"></abbr>
+    					    	
+				
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textLeft()" src="Resources/left.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textCenter()" src="Resources/center.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textRight()" src="Resources/right.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textJustify()" src="Resources/justify.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textUndo()" src="Resources/undo.png" style="width:23px;height:23px;"></a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link"><img onclick="textRedo()" src="Resources/redo.png" style="width:23px;height:23px;"></a>
+    		</li>
+  		</ul>
+  		</div>
+	</nav>
+  <div id="textField" style="font-size:20px"; contenteditable="true"></div>
+</body>
+</html>
